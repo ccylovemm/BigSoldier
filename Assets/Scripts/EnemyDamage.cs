@@ -2,7 +2,6 @@
 using System.Collections.Generic;
 using UnityEngine;
 using Spine.Unity;
-using MadLevelManager;
 
 public class EnemyDamage : MonoBehaviour
 {
@@ -31,8 +30,6 @@ public class EnemyDamage : MonoBehaviour
     IEnumerator Kill()
     {
         yield return new WaitForSeconds(2.0f);
-        MadLevelProfile.SetLevelBoolean(MadLevel.currentLevelName, "star_3", true);
-        MadLevelProfile.SetCompleted(MadLevel.currentLevelName, true);
-        MadLevel.LoadLevelByName("Main");
+        Singleton<Loading>.Instance.LoadScene("MainMenu");
     }
 }
