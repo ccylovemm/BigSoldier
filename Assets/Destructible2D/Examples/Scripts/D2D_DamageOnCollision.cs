@@ -12,7 +12,6 @@ public class D2D_DamageOnCollision : MonoBehaviour
 	
 	protected virtual void OnCollisionEnter2D(Collision2D collision)
 	{
-        if (collision.gameObject.layer == 8) return;
 		var damage = collision.relativeVelocity.magnitude * DamageScale;
 
         D2D_Helper.BroadcastMessage(collision.transform, "OnDamage", damage, SendMessageOptions.DontRequireReceiver);

@@ -34,8 +34,10 @@ using UnityEngine;
 using System.Collections;
 using Spine.Unity;
 
-namespace Spine.Unity.Examples {
-	public class FootSoldierExample : MonoBehaviour {
+namespace Spine.Unity.Examples
+{
+	public class FootSoldierExample : MonoBehaviour
+    {
 		[SpineAnimation("Idle")]
 		public string idleAnimation;
 
@@ -63,37 +65,79 @@ namespace Spine.Unity.Examples {
 
 		public float moveSpeed = 3;
 
+        private bool moveback_state = false;
+        private bool moveforward_state = false;
+
 		SkeletonAnimation skeletonAnimation;
 
-		void Awake () {
+		void Awake ()
+        {
 			skeletonAnimation = GetComponent<SkeletonAnimation>();
 			skeletonAnimation.OnRebuild += Apply;
 		}
 
-		void Apply (SkeletonRenderer skeletonRenderer) {
+        void OnEnable()
+        {
+            EventSystem.AddEvent(EType.MoveBack , this , "OnMoveBack");
+            EventSystem.AddEvent(EType.MoveForward, this, "OnMoveForward");
+        }
+
+        void OnDisable()
+        {
+            EventSystem.RemoveEvent(EType.MoveBack, this, "OnMoveBack");
+            EventSystem.RemoveEvent(EType.MoveForward, this, "OnMoveForward");
+        }
+
+        public void OnMoveBack(bool state)
+        {
+            moveback_state = state;
+            Debug.Log("moveback_state " + moveback_state);
+        }
+
+        public void OnMoveForward(bool state)
+        {
+            moveforward_state = state;
+            Debug.Log("moveforward_state " + moveforward_state);
+        }
+
+        void Apply (SkeletonRenderer skeletonRenderer)
+        {
 			StartCoroutine("Blink");
 		}
 
-		void Update () {
-			if (Input.GetKey(attackKey)) {
-				skeletonAnimation.AnimationName = attackAnimation;
-			} else {
-				if (Input.GetKey(rightKey)) {
+		void Update ()
+        {
+			if (!UICamera.isOverUI && Input.GetKey(attackKey))
+            {
+                if (!DataCenter.CanFire) return;
+                skeletonAnimation.AnimationName = attackAnimation;
+			}
+            else
+            {
+                if (DataCenter.isBattleOver) return;
+                if (moveforward_state)
+                {
 					skeletonAnimation.AnimationName = moveAnimation;
 					skeletonAnimation.skeleton.FlipX = false;
 					transform.Translate(moveSpeed * Time.deltaTime, 0, 0);
-				} else if(Input.GetKey(leftKey)) {
+				}
+                else if(moveback_state)
+                {
 					skeletonAnimation.AnimationName = moveAnimation;
 					skeletonAnimation.skeleton.FlipX = true;
 					transform.Translate(-moveSpeed * Time.deltaTime, 0, 0);
-				} else {
+				}
+                else
+                {
 					skeletonAnimation.AnimationName = idleAnimation;
 				}
 			}
 		}
 
-		IEnumerator Blink() {
-			while (true) {
+		IEnumerator Blink()
+        {
+			while (true)
+            {
 				yield return new WaitForSeconds(Random.Range(0.25f, 3f));
 				skeletonAnimation.skeleton.SetAttachment(eyesSlot, blinkAttachment);
 				yield return new WaitForSeconds(blinkDuration);

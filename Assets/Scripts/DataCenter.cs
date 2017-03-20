@@ -4,9 +4,27 @@ using UnityEngine;
 
 public class DataCenter
 {
-	static public int currMapId = 0;
-	static public int currStar = 0;
-	static public bool isBattleOver = false;
+    static public int currMapId = 0;
+    static public int currStar = 0;
+    static public bool isBattleOver = false;
+    static public int currSelectBomb = 0;
+
+    static public float fireTime;
+    static public float fireCdTime;
+
+    static public void SetFireCdTime()
+    {
+        fireTime = Time.time;
+        fireCdTime = Time.time + (currSelectBomb == 0 ? 2.0f :(currSelectBomb == 1 ? 1.0f : 0.0f));
+    }
+
+    static public bool CanFire
+    {
+        get
+        {
+            return !isBattleOver && (Time.time > fireCdTime);
+        }
+    }
 
 	static public bool IsPass(int mapId)
 	{

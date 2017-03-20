@@ -298,6 +298,7 @@
     <None Include="Assets\Destructible2D\Required\Shaders\Sprites-Diffuse (Destructible 2D).shader" />
     <None Include="Assets\Destructible2D\Required\Shaders\Sprites-Keep Alpha (Destructible 2D).shader" />
     <None Include="Assets\Destructible2D\Required\Shaders\Sprites-Outline (Destructible 2D).shader" />
+    <None Include="Assets\Resources\MapTexture\Readme.txt" />
     <None Include="Assets\Resources\Spine\FootSoldier\Equipment\Equipment.atlas.txt" />
     <None Include="Assets\Resources\Spine\FootSoldier\FS_White.atlas.txt" />
     <None Include="Assets\Resources\Spine\FootSoldier\license.txt" />

@@ -26,6 +26,15 @@ public class Loading : Singleton<Loading>
 
         yield return new WaitForSeconds(1.0f);
 
+        if (sceneName.Contains("Level"))
+        {
+            WindowManager.Instance.OpenWindow(WindowKey.BattleView);
+        }
+        else
+        {
+            WindowManager.Instance.CloseWindow(WindowKey.BattleView);
+        }
+
         AsyncOperation asyncOperation = SceneManager.LoadSceneAsync(sceneName);
         yield return asyncOperation;
 
