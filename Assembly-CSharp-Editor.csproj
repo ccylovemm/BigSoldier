@@ -1,0 +1,323 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>10.0.20506</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <RootNamespace></RootNamespace>
+    <ProjectGuid>{F0787E1E-1514-8A7F-F8E3-E03013790444}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <AssemblyName>Assembly-CSharp-Editor</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <BaseDirectory>Assets</BaseDirectory>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>Temp\bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE;UNITY_5_3_OR_NEWER;UNITY_5_4_OR_NEWER;UNITY_5_5_OR_NEWER;UNITY_5_5_1;UNITY_5_5;UNITY_5;UNITY_ANALYTICS;ENABLE_AUDIO;ENABLE_CACHING;ENABLE_CLOTH;ENABLE_GENERICS;ENABLE_MICROPHONE;ENABLE_MULTIPLE_DISPLAYS;ENABLE_PHYSICS;ENABLE_SPRITERENDERER_FLIPPING;ENABLE_SPRITES;ENABLE_TERRAIN;ENABLE_RAKNET;ENABLE_UNET;ENABLE_LZMA;ENABLE_UNITYEVENTS;ENABLE_WEBCAM;ENABLE_WWW;ENABLE_CLOUD_SERVICES_COLLAB;ENABLE_CLOUD_HUB;ENABLE_CLOUD_PROJECT_ID;ENABLE_CLOUD_SERVICES_UNET;ENABLE_CLOUD_SERVICES_BUILD;ENABLE_CLOUD_LICENSE;ENABLE_EDITOR_METRICS;ENABLE_EDITOR_METRICS_CACHING;INCLUDE_DYNAMIC_GI;INCLUDE_GI;PLATFORM_SUPPORTS_MONO;INCLUDE_PUBNUB;ENABLE_PLAYMODE_TESTS_RUNNER;ENABLE_SCRIPTING_NEW_CSHARP_COMPILER;ENABLE_RUNTIME_GI;ENABLE_SUBSTANCE;ENABLE_GAMECENTER;ENABLE_NETWORK;ENABLE_UNITYWEBREQUEST;ENABLE_VIDEO;ENABLE_CLOUD_SERVICES;ENABLE_CLOUD_SERVICES_ADS;ENABLE_CLOUD_SERVICES_ANALYTICS;ENABLE_CLOUD_SERVICES_PURCHASING;ENABLE_CLOUD_SERVICES_CRASH_REPORTING;PLAYERCONNECTION_LISTENS_FIXED_PORT;DEBUGGER_LISTENS_FIXED_PORT;PLATFORM_SUPPORTS_ADS_ID;SUPPORT_ENVIRONMENT_VARIABLES;PLATFORM_SUPPORTS_PROFILER;PLATFORM_HAS_NO_SUPPORT_FOR_BUCKET_ALLOCATOR;STRICTCPP_NEW_DELETE_SIGNATURES;HAS_NEON_SKINNIG;UNITY_GFX_USE_PLATFORM_VSYNC;UNITY_INPUT_SIMULATE_EVENTS;PLATFORM_ALWAYS_USES_STDOUT_FOR_LOG;ENABLE_VR;ENABLE_UNITYADS_RUNTIME;UNITY_UNITYADS_API;UNITY_IOS;UNITY_IPHONE;UNITY_IPHONE_API;SUPPORT_MULTIPLE_DISPLAYS;ENABLE_IL2CPP;ENABLE_PROFILER;UNITY_ASSERTIONS;UNITY_EDITOR;UNITY_EDITOR_64;UNITY_EDITOR_OSX;UNITY_TEAM_LICENSE;UNITY_PRO_LICENSE;ENABLE_IOS_ON_DEMAND_RESOURCES;ENABLE_IOS_APP_SLICING;ENABLE_DUCK_TYPING</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <NoWarn>0169</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>Temp\bin\Release\</OutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <NoWarn>0169</NoWarn>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.XML" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="UnityEngine">
+      <HintPath>/Applications/Unity/Unity.app/Contents/Managed/UnityEngine.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEditor">
+      <HintPath>/Applications/Unity/Unity.app/Contents/Managed/UnityEditor.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+     <Compile Include="Assets\3rd\NGUI\Examples\Scripts\InventorySystem\Editor\InvDatabaseInspector.cs" />
+     <Compile Include="Assets\3rd\NGUI\Examples\Scripts\InventorySystem\Editor\InvFindItem.cs" />
+     <Compile Include="Assets\3rd\NGUI\Scripts\Editor\ActiveAnimationEditor.cs" />
+     <Compile Include="Assets\3rd\NGUI\Scripts\Editor\BMFontReader.cs" />
+     <Compile Include="Assets\3rd\NGUI\Scripts\Editor\ComponentSelector.cs" />
+     <Compile Include="Assets\3rd\NGUI\Scripts\Editor\EventDelegateDrawer.cs" />
+     <Compile Include="Assets\3rd\NGUI\Scripts\Editor\EventDelegateEditor.cs" />
+     <Compile Include="Assets\3rd\NGUI\Scripts\Editor\FreeType.cs" />
+     <Compile Include="Assets\3rd\NGUI\Scripts\Editor\MinMaxRangeAttributeDrawer.cs" />
+     <Compile Include="Assets\3rd\NGUI\Scripts\Editor\NGUIContextMenu.cs" />
+     <Compile Include="Assets\3rd\NGUI\Scripts\Editor\NGUIEditorExtensions.cs" />
+     <Compile Include="Assets\3rd\NGUI\Scripts\Editor\NGUIEditorTools.cs" />
+     <Compile Include="Assets\3rd\NGUI\Scripts\Editor\NGUIHandles.cs" />
+     <Compile Include="Assets\3rd\NGUI\Scripts\Editor\NGUIHelp.cs" />
+     <Compile Include="Assets\3rd\NGUI\Scripts\Editor\NGUIJson.cs" />
+     <Compile Include="Assets\3rd\NGUI\Scripts\Editor\NGUIMenu.cs" />
+     <Compile Include="Assets\3rd\NGUI\Scripts\Editor\NGUISelectionTools.cs" />
+     <Compile Include="Assets\3rd\NGUI\Scripts\Editor\NGUISettings.cs" />
+     <Compile Include="Assets\3rd\NGUI\Scripts\Editor\NGUISnap.cs" />
+     <Compile Include="Assets\3rd\NGUI\Scripts\Editor\NGUITransformInspector.cs" />
+     <Compile Include="Assets\3rd\NGUI\Scripts\Editor\PropertyBindingEditor.cs" />
+     <Compile Include="Assets\3rd\NGUI\Scripts\Editor\PropertyReferenceDrawer.cs" />
+     <Compile Include="Assets\3rd\NGUI\Scripts\Editor\SpriteSelector.cs" />
+     <Compile Include="Assets\3rd\NGUI\Scripts\Editor\TweenAlphaEditor.cs" />
+     <Compile Include="Assets\3rd\NGUI\Scripts\Editor\TweenColorEditor.cs" />
+     <Compile Include="Assets\3rd\NGUI\Scripts\Editor\TweenFOVEditor.cs" />
+     <Compile Include="Assets\3rd\NGUI\Scripts\Editor\TweenHeightEditor.cs" />
+     <Compile Include="Assets\3rd\NGUI\Scripts\Editor\TweenOrthoSizeEditor.cs" />
+     <Compile Include="Assets\3rd\NGUI\Scripts\Editor\TweenPositionEditor.cs" />
+     <Compile Include="Assets\3rd\NGUI\Scripts\Editor\TweenRotationEditor.cs" />
+     <Compile Include="Assets\3rd\NGUI\Scripts\Editor\TweenScaleEditor.cs" />
+     <Compile Include="Assets\3rd\NGUI\Scripts\Editor\TweenTransformEditor.cs" />
+     <Compile Include="Assets\3rd\NGUI\Scripts\Editor\TweenVolumeEditor.cs" />
+     <Compile Include="Assets\3rd\NGUI\Scripts\Editor\TweenWidthEditor.cs" />
+     <Compile Include="Assets\3rd\NGUI\Scripts\Editor\TypewriterEffectEditor.cs" />
+     <Compile Include="Assets\3rd\NGUI\Scripts\Editor\UI2DSpriteEditor.cs" />
+     <Compile Include="Assets\3rd\NGUI\Scripts\Editor\UIAnchorEditor.cs" />
+     <Compile Include="Assets\3rd\NGUI\Scripts\Editor\UIAtlasInspector.cs" />
+     <Compile Include="Assets\3rd\NGUI\Scripts\Editor\UIAtlasMaker.cs" />
+     <Compile Include="Assets\3rd\NGUI\Scripts\Editor\UIBasicSpriteEditor.cs" />
+     <Compile Include="Assets\3rd\NGUI\Scripts\Editor\UIButtonColorEditor.cs" />
+     <Compile Include="Assets\3rd\NGUI\Scripts\Editor\UIButtonEditor.cs" />
+     <Compile Include="Assets\3rd\NGUI\Scripts\Editor\UIButtonKeysEditor.cs" />
+     <Compile Include="Assets\3rd\NGUI\Scripts\Editor\UIButtonMessageEditor.cs" />
+     <Compile Include="Assets\3rd\NGUI\Scripts\Editor\UICameraEditor.cs" />
+     <Compile Include="Assets\3rd\NGUI\Scripts\Editor\UICameraTool.cs" />
+     <Compile Include="Assets\3rd\NGUI\Scripts\Editor\UIColorPickerEditor.cs" />
+     <Compile Include="Assets\3rd\NGUI\Scripts\Editor\UICreateNewUIWizard.cs" />
+     <Compile Include="Assets\3rd\NGUI\Scripts\Editor\UICreateWidgetWizard.cs" />
+     <Compile Include="Assets\3rd\NGUI\Scripts\Editor\UIDragObjectEditor.cs" />
+     <Compile Include="Assets\3rd\NGUI\Scripts\Editor\UIDrawCallInspector.cs" />
+     <Compile Include="Assets\3rd\NGUI\Scripts\Editor\UIDrawCallViewer.cs" />
+     <Compile Include="Assets\3rd\NGUI\Scripts\Editor\UIEventTriggerEditor.cs" />
+     <Compile Include="Assets\3rd\NGUI\Scripts\Editor\UIFontInspector.cs" />
+     <Compile Include="Assets\3rd\NGUI\Scripts\Editor\UIFontMaker.cs" />
+     <Compile Include="Assets\3rd\NGUI\Scripts\Editor\UIForwardEventsEditor.cs" />
+     <Compile Include="Assets\3rd\NGUI\Scripts\Editor\UIGridEditor.cs" />
+     <Compile Include="Assets\3rd\NGUI\Scripts\Editor\UIImageButtonInspector.cs" />
+     <Compile Include="Assets\3rd\NGUI\Scripts\Editor\UIInputEditor.cs" />
+     <Compile Include="Assets\3rd\NGUI\Scripts\Editor\UIKeyNavigationEditor.cs" />
+     <Compile Include="Assets\3rd\NGUI\Scripts\Editor\UILabelInspector.cs" />
+     <Compile Include="Assets\3rd\NGUI\Scripts\Editor\UILocalizeEditor.cs" />
+     <Compile Include="Assets\3rd\NGUI\Scripts\Editor\UIPanelInspector.cs" />
+     <Compile Include="Assets\3rd\NGUI\Scripts\Editor\UIPanelTool.cs" />
+     <Compile Include="Assets\3rd\NGUI\Scripts\Editor\UIPlayAnimationEditor.cs" />
+     <Compile Include="Assets\3rd\NGUI\Scripts\Editor\UIPlayTweenEditor.cs" />
+     <Compile Include="Assets\3rd\NGUI\Scripts\Editor\UIPopupListInspector.cs" />
+     <Compile Include="Assets\3rd\NGUI\Scripts\Editor\UIPrefabTool.cs" />
+     <Compile Include="Assets\3rd\NGUI\Scripts\Editor\UIProgressBarEditor.cs" />
+     <Compile Include="Assets\3rd\NGUI\Scripts\Editor\UIRectEditor.cs" />
+     <Compile Include="Assets\3rd\NGUI\Scripts\Editor\UIRootEditor.cs" />
+     <Compile Include="Assets\3rd\NGUI\Scripts\Editor\UIScrollBarEditor.cs" />
+     <Compile Include="Assets\3rd\NGUI\Scripts\Editor\UIScrollViewEditor.cs" />
+     <Compile Include="Assets\3rd\NGUI\Scripts\Editor\UISliderEditor.cs" />
+     <Compile Include="Assets\3rd\NGUI\Scripts\Editor\UISnapshotPointEditor.cs" />
+     <Compile Include="Assets\3rd\NGUI\Scripts\Editor\UISpriteAnimationInspector.cs" />
+     <Compile Include="Assets\3rd\NGUI\Scripts\Editor\UISpriteInspector.cs" />
+     <Compile Include="Assets\3rd\NGUI\Scripts\Editor\UIStretchEditor.cs" />
+     <Compile Include="Assets\3rd\NGUI\Scripts\Editor\UITableEditor.cs" />
+     <Compile Include="Assets\3rd\NGUI\Scripts\Editor\UITextureInspector.cs" />
+     <Compile Include="Assets\3rd\NGUI\Scripts\Editor\UITexturePacker.cs" />
+     <Compile Include="Assets\3rd\NGUI\Scripts\Editor\UIToggleInspector.cs" />
+     <Compile Include="Assets\3rd\NGUI\Scripts\Editor\UITweenerEditor.cs" />
+     <Compile Include="Assets\3rd\NGUI\Scripts\Editor\UIWidgetContainerEditor.cs" />
+     <Compile Include="Assets\3rd\NGUI\Scripts\Editor\UIWidgetInspector.cs" />
+     <Compile Include="Assets\3rd\NGUI\Scripts\Editor\UIWrapContentEditor.cs" />
+     <Compile Include="Assets\Destructible2D\Required\Editor\D2D_AutoSpriteCollider_Editor.cs" />
+     <Compile Include="Assets\Destructible2D\Required\Editor\D2D_Context.cs" />
+     <Compile Include="Assets\Destructible2D\Required\Editor\D2D_Damageable_Editor.cs" />
+     <Compile Include="Assets\Destructible2D\Required\Editor\D2D_DestructibleSprite_Editor.cs" />
+     <Compile Include="Assets\Destructible2D\Required\Editor\D2D_DetachableSprite_Editor.cs" />
+     <Compile Include="Assets\Destructible2D\Required\Editor\D2D_DynamicMass_Editor.cs" />
+     <Compile Include="Assets\Destructible2D\Required\Editor\D2D_EdgeSpriteCollider_Editor.cs" />
+     <Compile Include="Assets\Destructible2D\Required\Editor\D2D_Editor.cs" />
+     <Compile Include="Assets\Destructible2D\Required\Editor\D2D_ExplosionForce_Editor.cs" />
+     <Compile Include="Assets\Destructible2D\Required\Editor\D2D_ExplosionStamp_Editor.cs" />
+     <Compile Include="Assets\Destructible2D\Required\Editor\D2D_Fixture_Editor.cs" />
+     <Compile Include="Assets\Destructible2D\Required\Editor\D2D_Fracturer_Editor.cs" />
+     <Compile Include="Assets\Destructible2D\Required\Editor\D2D_PolygonSpriteCollider_Editor.cs" />
+     <Compile Include="Assets\Destructible2D\Required\Editor\D2D_QuadFracturer_Editor.cs" />
+     <Compile Include="Assets\Destructible2D\Required\Editor\D2D_Splittable_Editor.cs" />
+     <Compile Include="Assets\Destructible2D\Required\Editor\D2D_SpriteCollider_Editor.cs" />
+     <Compile Include="Assets\Destructible2D\Required\Editor\D2D_SwappableSprite_Editor.cs" />
+     <Compile Include="Assets\Editor\PNGTool.cs" />
+     <Compile Include="Assets\Spine\Asset Types\Editor\AtlasAssetInspector.cs" />
+     <Compile Include="Assets\Spine\Asset Types\Editor\SkeletonDataAssetInspector.cs" />
+     <Compile Include="Assets\Spine\Editor\AssetDatabaseAvailabilityDetector.cs" />
+     <Compile Include="Assets\Spine\Editor\BoneFollowerInspector.cs" />
+     <Compile Include="Assets\Spine\Editor\Menus.cs" />
+     <Compile Include="Assets\Spine\Editor\SkeletonAnimationInspector.cs" />
+     <Compile Include="Assets\Spine\Editor\SkeletonAnimatorInspector.cs" />
+     <Compile Include="Assets\Spine\Editor\SkeletonBaker.cs" />
+     <Compile Include="Assets\Spine\Editor\SkeletonRendererInspector.cs" />
+     <Compile Include="Assets\Spine\Editor\SpineAttributeDrawers.cs" />
+     <Compile Include="Assets\Spine\Editor\SpineEditorUtilities.cs" />
+     <Compile Include="Assets\Spine\Editor\SpineInspectorUtility.cs" />
+     <Compile Include="Assets\Spine\Scripts\Modules\BoundingBoxFollower\Editor\BoundingBoxFollowerInspector.cs" />
+     <Compile Include="Assets\Spine\Scripts\Modules\CustomMaterials\Editor\SkeletonRendererCustomMaterialsInspector.cs" />
+     <Compile Include="Assets\Spine\Scripts\Modules\Ragdoll\Editor\SkeletonRagdoll2DInspector.cs" />
+     <Compile Include="Assets\Spine\Scripts\Modules\Ragdoll\Editor\SkeletonRagdollInspector.cs" />
+     <Compile Include="Assets\Spine\Scripts\Modules\Shaders\Sprite\Editor\SpineSpriteShaderGUI.cs" />
+     <Compile Include="Assets\Spine\Scripts\Modules\SkeletonGraphic\Editor\SkeletonGraphicInspector.cs" />
+     <Compile Include="Assets\Spine\Scripts\Modules\SkeletonRenderSeparator\Editor\SkeletonPartsRendererInspector.cs" />
+     <Compile Include="Assets\Spine\Scripts\Modules\SkeletonRenderSeparator\Editor\SkeletonRenderSeparatorInspector.cs" />
+     <Compile Include="Assets\Spine\SkeletonUtility\Editor\SkeletonUtilityBoneInspector.cs" />
+     <Compile Include="Assets\Spine\SkeletonUtility\Editor\SkeletonUtilityInspector.cs" />
+     <None Include="Assets\Spine\Editor\Resources\SpineAssetDatabaseMarker.txt" />
+     <None Include="Assets\3rd\NGUI\Examples\Shaders\Unlit - Depth Cutout.shader" />
+     <None Include="Assets\3rd\NGUI\ReadMe - 3.11.1.txt" />
+     <None Include="Assets\3rd\NGUI\Resources\Shaders\Unlit - Transparent Masked 1.shader" />
+     <None Include="Assets\Spine\Shaders\HiddenPass.shader" />
+     <None Include="Assets\3rd\NGUI\Resources\Shaders\Unlit - Text 2.shader" />
+     <None Include="Assets\3rd\NGUI\Resources\Shaders\Unlit - Transparent Masked 2.shader" />
+     <None Include="Assets\Destructible2D\Required\Shaders\Sprites-Diffuse (Destructible 2D).shader" />
+     <None Include="Assets\3rd\NGUI\Examples\Models\Orc\Orc Skin.shader" />
+     <None Include="Assets\Spine\Scripts\Modules\Shaders\Sprite\SpriteVertexLighting.cginc" />
+     <None Include="Assets\3rd\NGUI\Examples\Atlases\Wooden\Arimo20.txt" />
+     <None Include="Assets\Spine\Scripts\Modules\Shaders\Sprite\SpriteShadows.cginc" />
+     <None Include="Assets\3rd\NGUI\Examples\Atlases\Wooden\Arimo14.txt" />
+     <None Include="Assets\Spine\Scripts\Modules\Shaders\Sprite\SpritePixelLighting.cginc" />
+     <None Include="Assets\3rd\NGUI\Resources\Shaders\Unlit - Text 1.shader" />
+     <None Include="Assets\3rd\NGUI\Resources\Shaders\Unlit - Premultiplied Colored (TextureClip).shader" />
+     <None Include="Assets\3rd\NGUI\Resources\Shaders\Unlit - Transparent Colored (Packed) (TextureClip).shader" />
+     <None Include="Assets\Spine\Scripts\Modules\Shaders\Sprite\SpriteLighting.cginc" />
+     <None Include="Assets\3rd\NGUI\Resources\Shaders\Unlit - Transparent Colored 2.shader" />
+     <None Include="Assets\3rd\NGUI\Examples\Shaders\Unlit - Masked Colored.shader" />
+     <None Include="Assets\3rd\NGUI\Resources\Shaders\Unlit - Premultiplied Colored 3.shader" />
+     <None Include="Assets\Destructible2D\Examples\Shaders\Destructible2D-Gradient.shader" />
+     <None Include="Assets\3rd\NGUI\Examples\Atlases\Wooden\Arimo18.txt" />
+     <None Include="Assets\Resources\Spine\FootSoldier\FS_White.atlas.txt" />
+     <None Include="Assets\Spine\Scripts\Modules\Shaders\Sprite\ShaderShared.cginc" />
+     <None Include="Assets\Spine\Scripts\Modules\CustomMaterials\SkeletonRendererCustomMaterials.txt" />
+     <None Include="Assets\3rd\NGUI\Resources\Shaders\Unlit - Transparent Colored (TextureClip).shader" />
+     <None Include="Assets\3rd\NGUI\Examples\Atlases\SciFi\SciFi Font - Header.txt" />
+     <None Include="Assets\Destructible2D\Required\Shaders\Sprites-Outline (Destructible 2D).shader" />
+     <None Include="Assets\3rd\NGUI\Resources\Shaders\Unlit - Transparent Masked 3.shader" />
+     <None Include="Assets\Resources\Spine\Spineboy\spineboy.atlas.txt" />
+     <None Include="Assets\3rd\NGUI\Resources\Shaders\Unlit - Transparent Colored 1.shader" />
+     <None Include="Assets\3rd\NGUI\Examples\Atlases\Fantasy\Fantasy Font - Normal.txt" />
+     <None Include="Assets\3rd\NGUI\Resources\Shaders\Unlit - Transparent Colored 3.shader" />
+     <None Include="Assets\3rd\NGUI\Examples\Atlases\Refractive\Refractive Font - Normal.txt" />
+     <None Include="Assets\Spine\Scripts\Modules\Shaders\Sprite\SpriteUnlit.cginc" />
+     <None Include="Assets\Destructible2D\Required\Shaders\Sprites-Default (Destructible 2D).shader" />
+     <None Include="Assets\3rd\NGUI\Resources\Shaders\Unlit - Premultiplied Colored 2.shader" />
+     <None Include="Assets\Resources\Spine\FootSoldier\license.txt" />
+     <None Include="Assets\Spine\Scripts\Modules\Shaders\Sprite\SpritesPixelLit.shader" />
+     <None Include="Assets\3rd\NGUI\Resources\Shaders\Unlit - Text 3.shader" />
+     <None Include="Assets\3rd\NGUI\Resources\Shaders\Unlit - Transparent Packed 2.shader" />
+     <None Include="Assets\Spine\Scripts\Modules\Shaders\SkeletonTint.shader" />
+     <None Include="Assets\Spine\Scripts\Modules\Shaders\Sprite\SpritesUnlit.shader" />
+     <None Include="Assets\3rd\NGUI\Resources\Shaders\Unlit - Transparent Packed 1.shader" />
+     <None Include="Assets\Spine\Shaders\Bones.shader" />
+     <None Include="Assets\3rd\NGUI\Resources\Shaders\Unlit - Premultiplied Colored 1.shader" />
+     <None Include="Assets\Spine\Scripts\Modules\Shaders\Sprite\SpritesVertexLit.shader" />
+     <None Include="Assets\3rd\NGUI\Resources\Shaders\Unlit - Premultiplied Colored.shader" />
+     <None Include="Assets\Destructible2D\Required\Shaders\Sprites-Keep Alpha (Destructible 2D).shader" />
+     <None Include="Assets\Spine\Scripts\Modules\Ghost\Shaders\SkeletonGhost.shader" />
+     <None Include="Assets\3rd\NGUI\Resources\Shaders\Unlit - Transparent Colored.shader" />
+     <None Include="Assets\3rd\NGUI\Resources\Shaders\Unlit - Text.shader" />
+     <None Include="Assets\3rd\NGUI\Resources\Shaders\Unlit - Transparent Packed.shader" />
+     <None Include="Assets\3rd\NGUI\Resources\Shaders\Unlit - Transparent Packed 3.shader" />
+     <None Include="Assets\Spine\Scripts\Modules\SkeletonGraphic\Shaders\SkeletonGraphic.shader" />
+     <None Include="Assets\Spine\Shaders\Skeleton.shader" />
+     <None Include="Assets\3rd\NGUI\Examples\Shaders\Unlit - Additive Colored.shader" />
+     <None Include="Assets\3rd\NGUI\Resources\Shaders\Unlit - Transparent Masked.shader" />
+     <None Include="Assets\3rd\NGUI\Examples\Atlases\Refractive\Refractive Font - Header.txt" />
+     <None Include="Assets\3rd\NGUI\Examples\Shaders\Refractive.shader" />
+     <None Include="Assets\Destructible2D\Examples\Shaders\Destructible2D-VertexColours.shader" />
+     <None Include="Assets\3rd\NGUI\Resources\Shaders\Unlit - Text (TextureClip).shader" />
+     <None Include="Assets\3rd\NGUI\Examples\Shaders\Unlit - Depth.shader" />
+     <None Include="Assets\3rd\NGUI\Examples\Atlases\SciFi\SciFi Font - Normal.txt" />
+     <None Include="Assets\Spine\Scripts\Modules\SkeletonRenderSeparator\SkeletonRenderSeparator.txt" />
+     <None Include="Assets\Spine\Scripts\Modules\Shaders\Sprite\SpriteDepthNormalsTexture.shader" />
+     <None Include="Assets\3rd\NGUI\Examples\Models\Orc Armor\Orc Armor.shader" />
+     <None Include="Assets\Spine\Shaders\SkeletonLit.shader" />
+     <None Include="Assets\3rd\NGUI\Examples\Resources\Localization.txt" />
+     <None Include="Assets\Resources\Spine\FootSoldier\Equipment\Equipment.atlas.txt" />
+ <Reference Include="UnityEditor.Advertisements">
+ <HintPath>/Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/Advertisements/Editor/UnityEditor.Advertisements.dll</HintPath>
+ </Reference>
+ <Reference Include="nunit.framework">
+ <HintPath>/Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/EditorTestsRunner/Editor/nunit.framework.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEditor.EditorTestsRunner">
+ <HintPath>/Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/EditorTestsRunner/Editor/UnityEditor.EditorTestsRunner.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.UI">
+ <HintPath>/Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEditor.UI">
+ <HintPath>/Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/GUISystem/Editor/UnityEditor.UI.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.Networking">
+ <HintPath>/Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/Networking/UnityEngine.Networking.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEditor.Networking">
+ <HintPath>/Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/Networking/Editor/UnityEditor.Networking.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEditor.PlaymodeTestsRunner">
+ <HintPath>/Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/PlaymodeTestsRunner/Editor/UnityEditor.PlaymodeTestsRunner.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.PlaymodeTestsRunner">
+ <HintPath>/Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/PlaymodeTestsRunner/UnityEngine.PlaymodeTestsRunner.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEditor.TreeEditor">
+ <HintPath>/Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/TreeEditor/Editor/UnityEditor.TreeEditor.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.Analytics">
+ <HintPath>/Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/UnityAnalytics/UnityEngine.Analytics.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEditor.Analytics">
+ <HintPath>/Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/UnityAnalytics/Editor/UnityEditor.Analytics.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEditor.HoloLens">
+ <HintPath>/Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/UnityHoloLens/Editor/UnityEditor.HoloLens.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.HoloLens">
+ <HintPath>/Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/UnityHoloLens/RuntimeEditor/UnityEngine.HoloLens.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEditor.VR">
+ <HintPath>/Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/UnityVR/Editor/UnityEditor.VR.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.VR">
+ <HintPath>/Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/UnityVR/RuntimeEditor/UnityEngine.VR.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEditor.Graphs">
+ <HintPath>/Applications/Unity/Unity.app/Contents/Managed/UnityEditor.Graphs.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEditor.iOS.Extensions">
+ <HintPath>/Applications/Unity/PlaybackEngines/iOSSupport/UnityEditor.iOS.Extensions.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEditor.OSXStandalone.Extensions">
+ <HintPath>/Applications/Unity/Unity.app/Contents/PlaybackEngines/macstandalonesupport/UnityEditor.OSXStandalone.Extensions.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEditor.iOS.Extensions.Xcode">
+ <HintPath>/Applications/Unity/PlaybackEngines/iOSSupport/UnityEditor.iOS.Extensions.Xcode.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEditor.iOS.Extensions.Common">
+ <HintPath>/Applications/Unity/PlaybackEngines/iOSSupport/UnityEditor.iOS.Extensions.Common.dll</HintPath>
+ </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="Assembly-CSharp.csproj">
+      <Project>{A3F65D4D-BDAF-8362-E0A2-767E1987BC51}</Project>      <Name>Assembly-CSharp</Name>    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+  
+</Project>

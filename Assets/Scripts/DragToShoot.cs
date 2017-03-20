@@ -19,6 +19,8 @@ public class DragToShoot : MonoBehaviour
 
     protected virtual void Update()
     {
+		if (DataCenter.isBattleOver)
+			return;
         // Begin dragging?
         if (Input.GetMouseButton(0) == true && down == false)
         {

@@ -16,7 +16,7 @@ public class MainMenu : MonoBehaviour
     {
         if (o == startBtn)
         {
-            Singleton<Loading>.Instance.LoadWindow(map);
+			Singleton<Loading>.Instance.LoadScene ("Map");
         }
     }
 }

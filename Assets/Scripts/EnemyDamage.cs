@@ -30,6 +30,8 @@ public class EnemyDamage : MonoBehaviour
     IEnumerator Kill()
     {
         yield return new WaitForSeconds(2.0f);
-        Singleton<Loading>.Instance.LoadScene("MainMenu");
+		DataCenter.isBattleOver = true;
+		DataCenter.Save (DataCenter.currMapId , 3);
+		Singleton<WindowManager>.Instance.OpenWindow (WindowKey.ResultView , 3);
     }
 }
